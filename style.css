@@ -1,0 +1,53 @@
+
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/*=============== BASE ===============*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body,
+  button,
+  input,
+  textarea{
+    font-family:'Poppins', sans-serif;
+    font-size: .938rem;
+  }
+  
+  body{
+    margin: 3.5rem 0 0 0;
+    background-color:  hsl(var(--hue), 0%, 100%);
+    color:  hsl(var(--hue), 4%, 35%);
+    transition: .4s; /*For animation dark mode===============================================================*/
+  }
+  
+  button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  
+  h1,h2,h3{
+    color: hsl(var(--hue), 4%, 15%);
+    font-weight:  600;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  
