@@ -1,6 +1,33 @@
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++abrar invest web site++++++++++++++++++++++++++++++++++++++++++++
-----------------header------------------
-1-Home(intro pour l'entreprise mere ses branches)
-2-About( les departements -...)
-3:Projets
-4:contact
+-===============a voir sur git hub===============
+1 https://github.com/Orion56/Construction-Company-Site-Template
+
+
+
+=========================================
+Page d'accueil - Abrar Indus
+Bienvenue sur le site web d'Abrar Indus, un groupe spécialisé dans le domaine industriel au Maroc. Nous sommes fiers de vous présenter nos activités et notre expertise dans les différents secteurs de l'industrie.
+
+À propos d'Abrar Indus :
+Abrar Indus est une entreprise de premier plan engagée dans la construction, la production, et l'exploitation des ressources nécessaires à l'essor de l'industrie. Avec nos filiales Bitumed, Moja Préfa et Sud Gravette, nous couvrons divers aspects de l'industrie, allant des travaux de construction aux produits préfabriqués et à l'exploitation de carrières.
+
+Notre engagement envers l'excellence :
+Chez Abrar Indus, nous nous efforçons d'atteindre l'excellence dans tout ce que nous faisons. Grâce à notre savoir-faire, à nos équipes hautement qualifiées et à notre engagement envers la qualité, nous sommes en mesure de fournir des solutions industrielles fiables et innovantes à nos clients.
+
+Nos projets :
+Découvrez nos réalisations et nos projets marquants dans le domaine industriel. Nous avons travaillé sur des projets d'envergure, en collaborant avec des partenaires nationaux et internationaux pour offrir des solutions durables et performantes.
+
+Contactez-nous :
+Si vous souhaitez en savoir plus sur nos services, discuter de projets potentiels ou simplement entrer en contact avec notre équipe, n'hésitez pas à nous contacter. Nous serons ravis de répondre à vos questions et de vous accompagner dans vos besoins industriels.
+
+Nous vous invitons à explorer notre site web pour découvrir l'étendue de nos activités et notre engagement envers l'excellence industrielle. Nous sommes impatients de travailler avec vous et de contribuer à votre succès.
+
+Bienvenue chez Abrar Indus, votre partenaire de confiance dans l'industrie !
+======================================================POURQUOI NOUS CHOISIR?=================================
+Expertise confirmée : Profitez de notre expérience et de notre savoir-faire dans l'industrie.
+Solutions complètes : Simplifiez vos projets industriels grâce à nos solutions clé en main.
+Qualité et satisfaction client : Nous nous engageons à fournir des solutions de qualité et à assurer votre satisfaction.
+==================================================================================================================================================
+========================================================template1=================================================================================
+home color: jaune(Bienvenue):#DEA50D
+background-color(prq nous choisir):#322F3E
+

@@ -1,53 +1,75 @@
-
-/*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-/*=============== BASE ===============*/
 *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline-style: none;
+}
+
+
+/* Styles pour le header */
+#header {
   
-  html{
-    scroll-behavior: smooth;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+/* la video en background */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+/* Logo */
+.logo {
+  width: 130px; 
+  height: auto; 
+  margin-top: -20px; 
+  margin-bottom: 10px; /* Ajustez la marge inférieure selon vos besoins */
+}
+
+/* ==============================================================Menu======================================================= */
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: -5px;
+  padding: 0;
+  margin: 0;
+}
+.menu li {
+  margin-right: 20px; 
+}
+.menu li:first-child {
+  margin-left: 1000px;
   
-  body,
-  button,
-  input,
-  textarea{
-    font-family:'Poppins', sans-serif;
-    font-size: .938rem;
-  }
-  
-  body{
-    margin: 3.5rem 0 0 0;
-    background-color:  hsl(var(--hue), 0%, 100%);
-    color:  hsl(var(--hue), 4%, 35%);
-    transition: .4s; /*For animation dark mode===============================================================*/
-  }
-  
-  button{
-    cursor: pointer;
-    border: none;
-    outline: none;
-  }
-  
-  h1,h2,h3{
-    color: hsl(var(--hue), 4%, 15%);
-    font-weight:  600;
-  }
-  
-  ul{
-    list-style: none;
-  }
-  
-  a{
-    text-decoration: none;
-  }
-  
-  img{
-    max-width: 100%;
-    height: auto;
-  }
-  
+}
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/*================================================= Home=============================================*/
+.home-text {
+  text-align: center;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.home-text p {
+  font-size: 30px; /* Ajustez la taille de la police selon vos besoins */
+  color: #DEA50D;
+  margin-top: 20px;
+}
+
+.home-text h1 {
+  font-size: 90px; 
+  color: #000000;
+  flex-basis: 60%;
+}
