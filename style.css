@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  
 }
 /* la video en background */
 #bg-video {
@@ -28,11 +29,11 @@
 
 /* Logo */
 .logo {
-  width: 10%; 
+  width: 75%; 
   height: auto; 
-  position: fixed; 
-  top: 0; /* Ajoutez cette ligne */
-  left: 0; 
+  /* position: fixed;  
+  top: 0; 
+  left: 0;    reste tjrs afficher dans ca posion si vous decommenter*/
   margin-bottom: 80px; /* Ajustez la marge inférieure selon vos besoins */
 }
 
@@ -42,9 +43,9 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  position: fixed; /* Ajoutez cette ligne */
-  top: 0; /* Ajoutez cette ligne */
-  right: 0; /* Ajoutez cette ligne */
+  position: absolute; 
+  top: 0; 
+  right: 0; 
   margin-top: -5px;
   padding: 0;
   margin: 30px;
@@ -59,6 +60,7 @@
 .menu a {
   color: #020202;
   text-decoration: none;
+  font-size: 28px;
 
 }
 /*
@@ -81,16 +83,17 @@
 .home-text {
   text-align: center;
   justify-content: center;
-  margin-top: 90px;
+  margin-top: 50%;
 }
 
 .home-text p {
-  font-size: 30px; 
+  font-size: 40px; 
   color: #DEA50D;
   margin-top: 20px;
   width: 850px;
   justify-content: center;
-  margin-left: 25%;
+  margin-left: 29%;
+  margin-bottom: 10px;
 }
 
 .home-text h1 {
@@ -102,7 +105,7 @@
 .home-text {
   text-align: center ;
   justify-content: center;
-  margin-top: 90px;
+  margin-top:0%;
 }
 /* ==============================================presentation========================================= */
 .section1{
@@ -283,16 +286,21 @@ overflow: hidden;
  color: #DEA50D;
 } 
 /* ==================================================NOS PROJETS======================================== */
-.section1{
+.projet {
+  background: white;
+  background-image: url(images/bg3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
-  height: auto;
-  margin-top: 20%;
-  justify-content: center;
-  
+  height: 100%;
 }
-section1 img {
 
+.section2 {
+  padding: 20px;
+  color: #000000;
 }
+
 /* <!-- =================================================AVEZ-VOUS DES QUESTIONS?============================================= --> */
 #contact{
   justify-content:  space-between;
