@@ -23,15 +23,17 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  background: linear-gradient(rgba(0,0,0,0.6),#020202);
+  /* background: linear-gradient(rgba(0,0,0,0.6),#020202); */
 }
 
 /* Logo */
 .logo {
-  width: 130px; 
+  width: 10%; 
   height: auto; 
-  margin-top: -20px; 
-  margin-bottom: 10px; /* Ajustez la marge inférieure selon vos besoins */
+  position: fixed; 
+  top: 0; /* Ajoutez cette ligne */
+  left: 0; 
+  margin-bottom: 80px; /* Ajustez la marge inférieure selon vos besoins */
 }
 
 /* ==============================================================Menu======================================================= */
@@ -40,23 +42,28 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: fixed; /* Ajoutez cette ligne */
+  top: 0; /* Ajoutez cette ligne */
+  right: 0; /* Ajoutez cette ligne */
   margin-top: -5px;
   padding: 0;
-  margin: 0;
+  margin: 30px;
+  margin-left: 50%;
 }
 .menu li {
-  margin-right: 20px; 
+  margin-right: 30px;
 }
 .menu li:first-child {
-  margin-left: 1000px;
-  
+  margin-left: auto; /* Remplacez la valeur précédente par "auto" */  
 }
 .menu a {
   color: #020202;
   text-decoration: none;
+
 }
+/*
 /* ===========================================================voir transition et surligne===================================== */
-.menu li a::after{ 
+/* .menu li a::after{ 
   content:'' ;
   width:0;
   height: 3px;
@@ -68,7 +75,7 @@
 }
 .menu li a:hover::after{
   width: 100%;
-}
+} */
 /* ============================================================================================================================= */
 /*================================================= Home=============================================*/
 .home-text {
@@ -83,15 +90,15 @@
   margin-top: 20px;
   width: 850px;
   justify-content: center;
-  margin-left: 19%;
+  margin-left: 25%;
 }
 
 .home-text h1 {
   font-size: 90px; 
   color: #000000;
   flex-basis: 60%;
-  s
 }
+
 .home-text {
   text-align: center ;
   justify-content: center;
@@ -99,7 +106,7 @@
 }
 /* ==============================================presentation========================================= */
 .section1{
-  background-color: aliceblue;
+  background-color: white;
   width: 100%;
   height: auto;
   margin-top: 20%;
@@ -127,19 +134,20 @@
     margin-top: 20px;
 }
 .row img {
-  height:270px;
-  width:auto;
   left:  60px;
   flex-basis: 45%;
-  margin-top: -15px;
-  
+  margin-top: 15px;
+  width:100px;
+  height:auto;
+  border-radius: 10px;
+  top: 20%;
 }
 /* -------------------------------------POURQUOI NOUS CHOISIR------------------------------------------------*/
 #raison {
   background-color: #322F3E;
   padding: 30px 0;
   justify-content: center;
-  height: AUTO;
+  height: 500px;
   
 }
 .sub-title {
@@ -154,18 +162,19 @@
 }
 .raison-list div{
   background: #9e9b9b;
+  height: 300px;
   padding: 40px;
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 300;
   border-radius: 10px;
   transition: background(0.5s, transform 0.5s) ;
 }
 .raison-list div i {
-  font-size: 40px;
+  font-size: 50px;
   margin-bottom: 30px;
 }
 .raison-list div h2{
-  font-size: 30px;
+  font-size: 45px;
   font-weight: 500;
   margin-bottom: 15px;
 
@@ -173,9 +182,11 @@
 .raison-list div a{
   text-decoration: none;
   color: #fff;
-  font-size: 12px;
+  font-size: 17px;
   margin-top: 20px;
   display: inline-block ;
+  margin-left: 40%;
+  
 }
 .raison-list div:hover{
   background:#DEA50D;
@@ -270,4 +281,77 @@ overflow: hidden;
 .sub-title-service {
   margin-left: 40%; 
  color: #DEA50D;
+} 
+/* ==================================================NOS PROJETS======================================== */
+.section1{
+  width: 100%;
+  height: auto;
+  margin-top: 20%;
+  justify-content: center;
+  
 }
+section1 img {
+
+}
+/* <!-- =================================================AVEZ-VOUS DES QUESTIONS?============================================= --> */
+#contact{
+  justify-content:  space-between;
+  /* display: inline-block; */
+  background: #322F3E;
+  width: 100%;
+  height: auto;
+}
+.contact-left{
+  flex-basis: 35%;
+}
+.contact-right{
+  /* flex-basis: 60%; */
+  flex-basis: 30%;
+}
+.contact-right {
+  width: 100%;
+  
+}
+.contact-left p{
+  margin-top: 30px;
+  font-size: 20px;
+  
+}
+
+.btn.btn2{
+  display: inline-block;
+  background: #DEA50D;
+}
+
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px ;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+form btn2{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+/* ---------------------------------------------------------------------------------- */
+.copyright{
+  width: 100%; 
+  text-align: center;
+  padding: 25px 0;
+  /* background: #262626; */
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+
+/* ===============================contact===================================================== */
+
+
+/* =============================================SMALL SCREEN====================================== */
