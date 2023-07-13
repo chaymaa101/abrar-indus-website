@@ -104,7 +104,8 @@
   margin-top: 15%;
   justify-content: center;
 }
-.section1 h2{
+.section1 h1{
+  text-align: center;
   color: #DEA50D;
   font-size: 50px;
   margin-left: 30px;
@@ -445,5 +446,5 @@ form .btn2{
 /* Styles for small screens */
 @media only screen and (max-width: 600px) {
   /* Header */
-  
+
 }
