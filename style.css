@@ -31,7 +31,7 @@
 
 /* Logo */
 .logo {
-  width: 75%; 
+  width: 50%; 
   height: auto; 
   /* position: fixed;  
   top: 0; 
@@ -60,9 +60,9 @@
   margin-left: auto; /* Remplacez la valeur précédente par "auto" */  
 }
 .menu a {
-  color: #020202;
+  color: white;
   text-decoration: none;
-  font-size: 28px;
+  font-size: 20px;
 
 }
 /*
@@ -89,13 +89,13 @@
 }
 
 .home-text p {
-  font-size: 40px; 
+  font-size: 30px; 
   color: #DEA50D;
   margin-top: 20px;
   width: 850px;
   justify-content: center;
-  margin-left: 29%;
-  margin-bottom: 10px;
+  margin-left: 20%;
+  margin-bottom: 20px;
 }
 
 .home-text h1 {
@@ -179,7 +179,7 @@
   margin-bottom: 30px;
 }
 .raison-list div h2{
-  font-size: 45px;
+  font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
 
@@ -270,12 +270,12 @@ overflow: hidden;
 }
 
 .btn{
-  font-size: 30px;
+  font-size: 25px;
   display: block;
-  margin: 50px auto;
+  margin: 40px auto;
   width: fit-content;
   border: 1px solid #DEA50D;
-  padding:30px 50px ;
+  padding:18px 20px ;
   border-radius:  6px;
   text-decoration: none;
   color:black;
@@ -300,7 +300,7 @@ overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
-  width: 2100px;
+  width: 100%;
   height: auto;
   background-size: cover;
   background-position: center;
@@ -319,19 +319,20 @@ overflow: hidden;
 }
 
 .project-content h1 {
-  color: #040225;
+  color: #000000;
   text-align: center;
   margin-bottom: 2.5%;
-  margin-top: 1.5%;
-  
+  margin-top: 0.5%;
+  font-size: 40px;
 }
 
 .project-content p{
-  font-size: 33px;
+  font-size: 22px;
   width: 50%;
   height: 100%;
   float: left;
   margin-left: 5%;
+  /* color: #000000; */
 }
 .project-content .image-container {
   float: left;
@@ -345,63 +346,113 @@ overflow: hidden;
 
 /* <!-- =================================================AVEZ-VOUS DES QUESTIONS?============================================= --> */
 #contact{
-  justify-content:  space-between;
-  /* display: inline-block; */
-  background: #322F3E;
-  width: 100%;
-  height: auto;
+  margin-top:39% ;
+  /* margin-left: -10%; */
+  /* background-color: #DEA50D; */
 }
 .contact-left{
-  flex-basis: 35%;
-}
-.contact-right{
-  /* flex-basis: 60%; */
-  flex-basis: 30%;
-}
-.contact-right {
-  width: 100%;
-  
-}
-.contact-left p{
-  margin-top: 30px;
-  font-size: 20px;
-  
+  flex-basis: 60%;
+  margin-left: -20%;
 }
 
+.contact-right{
+  flex-basis: 50%;
+  margin-left: -20%;
+  margin-right: 40px;
+}
 .btn.btn2{
   display: inline-block;
   background: #DEA50D;
+  /* transform:  scale(1.1); */
+  font-size: 19px; 
+  padding: 8px 20px;
+  border-radius: 6px;
+  transition: transform 0.5s;
 }
-
 form input, form textarea{
   width: 100%;
   border: 0;
   outline: none;
   background: #262626;
-  padding: 15px ;
-  margin: 15px 0;
+  padding: 10px ;
+  margin: 5px 0;
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
   border-radius: 6px;
 }
-form btn2{
-  padding: 14px 60px;
-  font-size: 18px;
-  margin-top: 20px;
+form .btn2{
+  padding: 10px 30px;
+  font-size: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  /* transform:  scale(1.1); */
+}
+.btn.btn2:hover {
+  transform: scale(1.1); 
+}
+.sub-title span{
+  color: #000000;
+}
+/* ===============================contact us===================================================== */
+
+
+#info-contact{
+  background-color: gray;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+#info-contact h1.sub-title {
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 19px;
+  
+}
+
+#info-contact .final-image img {
+  width: 470px; 
+  height: auto;
+  margin-top: -15px; 
+  margin-right: 20%; */
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+#info-contact .info {
+  /* cursor: pointer; */
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+#info-contact .info p{
   cursor: pointer;
 }
-/* ---------------------------------------------------------------------------------- */
+#info-contact .info p:hover{
+  transform: scale(1.1); 
+}
+/* --------------------------pour animimage-------------------------- */
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#info-contact .final-image img {
+  animation: scale 6s infinite;
+}
+
+/* ========================================copyright=================== */
 .copyright{
   width: 100%; 
   text-align: center;
-  padding: 25px 0;
+  /* padding: 25px 0; */
   /* background: #262626; */
   font-weight: 300;
-  margin-top: 20px;
+  background-color: gray;
 }
-
-
-/* ===============================contact===================================================== */
-
-
 /* =============================================SMALL SCREEN====================================== */
