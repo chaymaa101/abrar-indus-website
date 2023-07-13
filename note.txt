@@ -31,4 +31,7 @@ Qualité et satisfaction client : Nous nous engageons à fournir des solutions d
 ========================================================template1=================================================================================
 home color: jaune(Bienvenue):#DEA50D
 background-color(prq nous choisir):#322F3E
+===================================TOOO DOO==================
+TRAITER LA PARTIE DES MESSAGES ENVAYES PAR UTILISATEUR (liee dik la partie msg avec email de l entreprise )
+SMALL SCREEN 
 
