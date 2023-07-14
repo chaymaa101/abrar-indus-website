@@ -63,7 +63,7 @@ nav{
   color: #DEA50D;
 }
 .menu li:first-child {
-  margin-left: auto; /* Remplacez la valeur précédente par "auto" */  
+  margin-left: auto; 
 }
 .menu a {
   color: white;
@@ -540,10 +540,8 @@ flex-wrap: wrap;
   }
   
   .home-text h1 {
-    font-size: 30px; 
-    color: #000000;
-    /* flex-basis: 60%; */
-    margin-left: 20%;
+    font-size: 25px; 
+    margin-left: 17%;
 display: flex;
 flex-wrap: wrap;
   }
@@ -570,6 +568,29 @@ flex-wrap: wrap;
     opacity: 0.8;
    
   }
-  
+  /* ===============================MENU=================== */
+  nav{
+    /* display: flex; */
+    align-items: flex-start;
+    flex-wrap:wrap-reverse;
+  }
+  .menu {
+    display: block;
+    /* align-items: center; */
+    justify-content: column ;
+    margin-top: -5px;
+    margin: 0px;
+    right: 0;
+    /* margin-left: 50%; */
+    background-color: #DEA50D;
+    width: auto;
+    height: auto;
+  }
+  .menu a {
+    font-size: 15px;
+  }
+  .menu li{
+    margin: 20px;
+  }
 
 } 
