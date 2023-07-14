@@ -13,19 +13,21 @@
         <div class="container">
             <nav>
                 <!-- <img src="images/ABRAR INDUSLOGO.png" class="logo"> -->
-                <ul class="menu">
+                <ul class="menu"  id="sidemenu" >
                     <li><a href="#home"> Accueil</a></li>
                     <li><a href="#propos"> À propos </a> </li>
                     <li><a href="#services"> Services </a> </li>
                     <li><a href="#projet"> Projets</a></li>
                     <li><a href="#info-contact">Contact</a></li>
-                    <li><a href="#contact"><i class="fa-sharp fa-solid fa-magnifying-glass" ></i></a></li>
+                    <li><a href="#contact"><i class="fa-regular fa-question" style="color: #ffffff;"></i></a></li>
+                    <i class="fa-solid fa-xmark"  style="color: white;" onclick="closemenu()"></i>
                     <!-- style="color: white;" -->
                 </ul>
+                <i class="fa-solid fa-bars" style="color: white;" onclick="openmenu()"></i>
                 <img src="images/ABRAR INDUSLOGO.png" class="logo">
             </nav>
         </div>
-    </div>
+    </div>              
 <!-- ===============================================================home=========================================== -->
 
 <div class="home" id="home">
@@ -153,22 +155,18 @@
 <!-- =================================CONTACTS US============================================ -->
 <div id="info-contact">
         <div class="row">
-            <h1 class="sub-title"><span>Contactez</span>-Nous <br></h1>
-                <div class="info">
+            <h1 class="sub-title"><span>Contactez</span>-Nous </h1>
+             <div class="info">
                     
                 <p><i class="fa-solid fa-envelope"></i> contact@abrarinvest.com</p>
                 <p><i class="fa-solid fa-phone-square-alt"></i> 0522778300-0522778310</p>
                 <p><i class="fa-solid fa-location-dot"></i></i> Lotissement La Coline, Lot N 11, Sidi Maarouf, Casablanca</p>
                 </div>
-                <!-- <div class="social-icons">
-                    <a href="###"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="###"><i class="fa-brands fa-square-twitter"></i></a>
-                    <a href="###"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="###"><i class="fa-brands fa-linkedin"></i></a>
-                </div> -->
-            <div class="final-image">
-                <img src="images/ABRAR_INDUS_2-removebg-preview.png" alt="">
-            </div>
+                  
+ 
+             <div class="final-image">
+                <img src="images/ABRAR_INDUS_2-removebg-preview.png" alt="">          
+            </div> 
             
         </div>
 </div>
@@ -176,6 +174,19 @@
 <div class="copyright">
     <p>copyright : mmmmmmmmmmmmmmmmmmmmade by me (:</p>
 </div>
+
+<!-- ================================== -->
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    
+</script>
 </body>
 
 </html>
