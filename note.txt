@@ -35,3 +35,10 @@ background-color(prq nous choisir):#322F3E
 TRAITER LA PARTIE DES MESSAGES ENVAYES PAR UTILISATEUR (liee dik la partie msg avec email de l entreprise )
 SMALL SCREEN 
 
+
+  /* -------------------prq nous choisir---------------------- */
+  .raison-list {
+    grid-template-columns: 1fr;
+  }
+
+} 
