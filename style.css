@@ -4,6 +4,7 @@
   box-sizing: border-box;
   outline-style: none;
 }
+
 /* Styles pour le header */
 #header {
   
@@ -145,6 +146,7 @@ nav{
   font-size: 25px;
     margin-bottom: 20px;
     margin-top: 15px;
+    margin: 30px;
 }
 .row img {
   /* left:  60px; */
@@ -152,8 +154,7 @@ nav{
   margin-top: 10px;
   margin-bottom: 10px;
   height:100%;
-  width:1px;
-  
+  width:1px; 
   border-radius: 10px;
   /* top: 20%; */
 }
@@ -162,11 +163,12 @@ nav{
   background-color: #322F3E;
   padding: 30px 0;
   justify-content: center;
-  height: 500px;
+  height:auto;
   
 }
 .sub-title {
-  margin-left: 33%; 
+  text-align: center;
+  /* margin-left: 33%;  */
  color: #DEA50D;
 }
 .raison-list {
@@ -192,7 +194,6 @@ nav{
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
-
 }
 .raison-list div a{
   text-decoration: none;
@@ -200,8 +201,6 @@ nav{
   font-size: 17px;
   margin-top: 20px;
   display: inline-block ;
-  margin-left: 40%;
-  
 }
 .raison-list div:hover{
   background:#DEA50D;
@@ -303,18 +302,12 @@ overflow: hidden;
 /* ==================================================NOS PROJETS======================================== */
 .project-container {
   position: relative;
-  /* background: #322F3E; */
 }
-
- .background-image {
+.background-image {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: auto;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   z-index: -1;
   filter: brightness(0.25);
 } 
@@ -323,11 +316,10 @@ overflow: hidden;
   padding: 20px;
   color: #ffffff;
   font-size: 30px;
-  /* width: 50%;
-  height: 100%;
-  float: left; */
+  display: flex; /* Utilisez flexbox pour aligner les éléments en ligne */
+  flex-direction: column; /* Aligner les éléments en colonne */
+  align-items: center; 
 }
-
 .project-content h1 {
   color: #000000;
   text-align: center;
@@ -335,20 +327,17 @@ overflow: hidden;
   margin-top: 0.5%;
   font-size: 40px;
 }
-
 .project-content p{
   font-size: 22px;
-  width: 50%;
-  height: 100%;
+  width: 80%;
+  max-width: 800px; /* Définir une largeur maximale pour le paragraphe */
+  margin-top: 20px; /* Ajouter une marge supérieure pour l'espace avec l'image */
+
   float: left;
-  margin-left: 5%;
-  /* color: #000000; */
 }
 .project-content .image-container {
-  float: left;
   margin-right: 20px;
 }
-
 .project-content img {
   width: 300px;
   height: auto;
@@ -356,24 +345,26 @@ overflow: hidden;
 
 /* <!-- =================================================AVEZ-VOUS DES QUESTIONS?============================================= --> */
 #contact{
-  margin-top:39% ;
-  /* margin-left: -10%; */
-  /* background-color: #DEA50D; */
+  background-color: white;
+  padding: 50px 0; 
+}
+#contact .row {
+  display: flex;
+  flex-wrap: wrap;
 }
 .contact-left{
   flex-basis: 60%;
-  margin-left: -20%;
+  text-align: center;
+  /* margin-top: 4%; */
+  /* margin-left: -20%; */
 }
 
 .contact-right{
-  flex-basis: 50%;
-  margin-left: -20%;
-  margin-right: 40px;
+  flex-basis: 40%;
 }
 .btn.btn2{
   display: inline-block;
   background: #DEA50D;
-  /* transform:  scale(1.1); */
   font-size: 19px; 
   padding: 8px 20px;
   border-radius: 6px;
@@ -395,7 +386,6 @@ form .btn2{
   font-size: 12px;
   margin-top: 10px;
   cursor: pointer;
-  /* transform:  scale(1.1); */
 }
 .btn.btn2:hover {
   transform: scale(1.1); 
@@ -404,35 +394,36 @@ form .btn2{
   color: #000000;
 }
 /* ===============================contact us===================================================== */
-
-
 #info-contact{
-  display: inline-block;
   background-color: gray;
   width: 100%;
   height: auto;
-  justify-content: center;
 }
-#info-contact h1.sub-title {
-  margin-bottom: 20px;
+#info-contact h1 {
   text-align: center;
-  margin-top: 19px;
-  
+  margin-bottom: 1%;
 }
+#info-contact .row {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  white-space: nowrap;
 
-#info-contact .final-image img {
-  width: 470px; 
-  height: auto;
-  margin-top: -15px; 
-  margin-right: 20%; 
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 40px;
 }
-#info-contact .info {
-  /* cursor: pointer; */
-  margin-top: 30px;
-  margin-bottom: 40px;
+#info-contact .row .info {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  width: 60%;
+  padding-right: 5%;
+}
+#info-contact .row .final-image {
+  display: inline-block;
+  width: 40%;
+}
+#info-contact .final-image img {
+  width: 100%;
+  height: auto;
 }
 #info-contact .info p{
   cursor: pointer;
@@ -440,13 +431,6 @@ form .btn2{
 #info-contact .info p:hover{
   transform: scale(1.1); 
 }
-#info-contact .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  
-}
-/* --------------------------pour animimage-------------------------- */
 @keyframes scale {
   0% {
     transform: scale(1);
@@ -478,7 +462,7 @@ form .btn2{
 nav .fa-solid{
   display: none;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 0px) {
   /* =================================menu================ */
   nav .fa-solid{
     display: block;
@@ -604,6 +588,10 @@ flex-wrap: wrap;
   }
   .menu li{
     margin: 20px;
+  }
+  /* -------------------prq nous choisir---------------------- */
+  .raison-list {
+    grid-template-columns: 1fr;
   }
 
 } 
