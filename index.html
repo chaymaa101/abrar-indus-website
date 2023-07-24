@@ -39,7 +39,7 @@
                 <div class="home-container">
     
                        <video autoplay muted loop id="bg-video">
-                        <source src="images/industry-video.mp4" type="video/mp4">
+                        <source src="images/videoplayback (1).mp4" type="video/mp4">
     
                       </video>
                       <div class="home-text">
@@ -142,12 +142,11 @@
             <div class="contact-left">
                 <h1 class="sub-title">AVEZ-VOUS DES QUESTIONS? <br><span>N'HÉSITEZ PAS À NOUS CONTACTER!  </span></h1>
 
-
             </div>
             <div class="contact-right">
-                <form>
+                <form action="traitement_formulaire.py" method="post">
                     <input type="text" name="Name" placeholder="Nom et prénom " required>
-                    <input type="email" name="email" placeholder="votre Email" required>
+                    <input type="email" id="email" placeholder="votre Email" required>
                     <textarea name="Message"  rows="6" placeholder="votre Message"></textarea>
                     <button type="submit" class="btn btn2"><i class="fa-solid fa-paper-plane"></i></button>
                 </form>
@@ -156,7 +155,6 @@
 </div>
 <!-- =================================CONTACTS US============================================ -->
 <div id="info-contact">
-
             <h1 class="sub-title"><span>Contactez</span>-Nous </h1>
             <div class="row">
                 <div class="info">
@@ -185,6 +183,8 @@
       sidemenu.style.right = "-200px";
     }
   </script>
+  <!-- ===============================from web to mail-=============== -->
+
 </body>
 
 </html>
