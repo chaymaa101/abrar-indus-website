@@ -17,7 +17,7 @@
 }
 /* la video en background */
 #bg-video {
-  filter: brightness(0.5);
+  /* filter: brightness(0.5); */
   position: fixed;
   position: absolute;
   top: 0;
@@ -59,7 +59,7 @@ nav{
   color: #DEA50D;
 }
 .menu a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   font-size: 20px;
 
@@ -90,11 +90,15 @@ nav{
 
 .home-text h1 {
   font-size: 90px; 
-  color: #000000;
+  color: #ffffff;
   /* flex-basis: 60%; */
+  margin-bottom: 22%;
+  font-size: 45px;
+  margin-top: 10%;
+  
 }
 .home-text h1 {
-  animation: pulsate 15s ease-in-out infinite; /* Modifier la durée et le type d'animation selon vos besoins */
+  animation: pulsate 15s ease-in-out infinite;
 }
 
 @keyframes pulsate {
@@ -411,11 +415,9 @@ form .btn2{
     transform: scale(1);
   }
 }
-
 #info-contact .final-image img {
   animation: scale 6s infinite;
 }
-
 /* ========================================copyright=================== */
 .copyright{
   width: 100%; 
@@ -443,9 +445,10 @@ nav .fa-solid{
     position: absolute;
     top: 0px;
     left:0px;
-    background-size: cover;
+    background-size:cover;
+    background-position: center;
     position: relative;
-    margin-bottom:5%;
+    /* margin-bottom:5%; */
   }
     /* =======================================MENU========================== */
     nav .fa-solid{
@@ -479,24 +482,26 @@ nav .fa-solid{
   .home-text {
     text-align: center;
     justify-content: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
-  .home-text p {
+  /* .home-text p {
     color: black;
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    /* width: 50%; */
     justify-content: center; 
-  }
+  } */
   .home-text h1 {
-    font-size: 25px; 
-    color: #DEA50D;
+    font-size: 15px; 
+    color: #000000;
+    padding: 20%;
   }
+
   /* ==============================logo====================== */
   .logo {
     width: 30%; 
-    height: auto; 
+    height: auto;
+    margin-bottom: 10%; 
   }
 
 /* ===================================presentation======================== */
