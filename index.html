@@ -171,22 +171,23 @@
 </div>
 <!-- ================================== -->
 <script>
-    var sidemenu = document.getElementById("sidemenu");
-  
-    function toggleMenu() {
-      if (sidemenu.style.display === "none") {
-        sidemenu.style.display = "block";
-      } else {
-        sidemenu.style.display = "none";
+    if (window.matchMedia("(max-width: 896px)").matches) {
+      var sidemenu = document.getElementById("sidemenu");
+      sidemenu.style.display = "none";
+    
+      function toggleMenu() {
+        if (sidemenu.style.display === "none") {
+          sidemenu.style.display = "block";
+        } else {
+          sidemenu.style.display = "none";
+        }
       }
+      window.addEventListener("click", function (event) {
+        if (!event.target.matches(".fa-bars") && !event.target.matches("#sidemenu") && !event.target.closest("#sidemenu")) {
+          sidemenu.style.display = "none";
+        }
+      });
     }
-  
-    // Fermer le menu lorsqu'on clique en dehors du menu
-    window.addEventListener("click", function (event) {
-      if (!event.target.matches(".fa-bars") && !event.target.matches("#sidemenu") && !event.target.closest("#sidemenu")) {
-        toggleMenu();
-      }
-    });
   </script>
   <!-- ===============================fleche de defilement -=============== -->
   <script>

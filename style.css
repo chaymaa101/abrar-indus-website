@@ -477,6 +477,9 @@ nav .fa-solid{
   .menu li{
     margin: 20px;
   }
+  #sidemenu.show {
+  display: block;
+}
   /* ===========================home============================= */
   .home-text {
     text-align: center;
@@ -492,7 +495,7 @@ nav .fa-solid{
   } */
   .home-text h1 {
     font-size: 18px; 
-    color: #0d0138;
+    color: #828282;
     padding-top: 0%;
     padding-bottom: 50%;
   }
@@ -511,7 +514,7 @@ nav .fa-solid{
 }
 .section1 h1 {
   font-size: 30px;
-  margin-top: -35%;
+  margin-top: -30%;
 }
 .row {
   display: flex;
