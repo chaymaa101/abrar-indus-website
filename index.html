@@ -8,20 +8,14 @@
     <script src="https://kit.fontawesome.com/fe1e7967b1.js" crossorigin="anonymous"></script>
 </head>
 <body> 
-    <!-- Flèche de retour en haut -->
     <div class="scroll-arrow scroll-up" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></div>
-
-    <!-- Flèche pour aller en bas -->
     <div class="scroll-arrow scroll-down" onclick="scrollToBottom()"><i class="fa-solid fa-arrow-down"></i></div>
-
     <!-- ===============================================PREMIERE PARTIE====================================== -->
 <div class="section0">
             <!-- ==================================<header>========================================== -->
-
                 <div id="header">
                     <div class="container">
                         <img src="images/ABRAR INDUSLOGO.png" class="logo">
-    
                         <nav>
                         <i class="fa-solid fa-bars " style="color: white; position: absolute; top: 10px; right: 10px"  onclick="openmenu()"></i>
     
@@ -31,11 +25,10 @@
                                 <li><a href="#propos">À propos</a> </li>
                                 <li><a href="#services"> Services </a> </li>
                                 <li><a href="#projet"> Projets</a></li>
+                                <li><a href="#contact">Vos QSTs</a></li>
                                 <li><a href="#info-contact">Contact</a></li>
-                                <li><a href="#contact"><i class="fa-regular fa-question" style="color: #ffffff;"></i></a></li>
                                 <li></li>
                             </ul>
-    
                         </nav>
                     </div>
                 </div>
@@ -57,8 +50,6 @@
                     </div>
                 </div>
             </div>
-
-
 </div>
 <!-- =============================================FIN DE LA PREMIERE PARTIE=================================== -->
 <!-- =====================================================presentation de abrar indus=============================================== -->
@@ -70,7 +61,6 @@
         <img src="images/GENERAL.jpg" alt="abrar-insutrie">
     </div>
 </div>
-
     <!-- ---------------------------========================================-POURQUOI NOUS CHOISIR?============================================-------------------- -->
     <div id="raison">
         <div class="container">
@@ -78,7 +68,6 @@
             </h1>
             <div class="raison-list">
                 <div>
-
                     <i class="fa-solid fa-list-ul"></i>
                     <h2>Solutions complètes</h2>
                     <p>Simplifiez vos projets industriels grâce à nos solutions clé en main.</p>
@@ -167,7 +156,6 @@
             <h1 class="sub-title"><span>Contactez</span>-Nous </h1>
             <div class="row">
                 <div class="info">
-
                     <p><i class="fa-solid fa-envelope"></i> contact@abrarinvest.com</p>
                     <p><i class="fa-solid fa-phone-square-alt"></i> 0522778300-0522778310</p>
                     <p><i class="fa-solid fa-location-dot"></i></i> Lotissement La Coline, Lot N 11, Sidi Maarouf, Casablanca</p>
@@ -179,9 +167,8 @@
 </div>
 <!-- ================================================================================================================ -->
 <div class="copyright">
-    <p>copyright : mmmmmmmmmmmmmmmmmmmmade by me (:</p>
+    <p>Consultez notre site <br> <a href="http://www.abrarinvest.com" style="color: aliceblue;">http://www.abrarinvest.com</a></p>
 </div>
-
 <!-- ================================== -->
 <script>
     var sidemenu = document.getElementById("sidemenu");
@@ -194,7 +181,6 @@
   </script>
   <!-- ===============================fleche de defilement -=============== -->
   <script>
-    // Afficher ou masquer les flèches en fonction du défilement de la page
     window.addEventListener('scroll', function () {
         var scrollToTopBtn = document.querySelector('.scroll-up');
         var scrollToBottomBtn = document.querySelector('.scroll-down');
@@ -205,23 +191,18 @@
         } else {
             scrollToTopBtn.style.display = 'none';
         }
-
         if (windowBottom < document.body.offsetHeight - 200) {
             scrollToBottomBtn.style.display = 'block';
         } else {
             scrollToBottomBtn.style.display = 'none';
         }
     });
-
-    // Fonction pour revenir en haut de la page
     function scrollToTop() {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
     }
-
-    // Fonction pour aller en bas de la page
     function scrollToBottom() {
         window.scrollTo({
             top: document.body.scrollHeight,
@@ -229,7 +210,5 @@
         });
     }
 </script>
-
 </body>
-
 </html>
