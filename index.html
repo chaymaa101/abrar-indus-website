@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/fe1e7967b1.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body> 
+    <!-- Flèche de retour en haut -->
+    <div class="scroll-arrow scroll-up" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></div>
+
+    <!-- Flèche pour aller en bas -->
+    <div class="scroll-arrow scroll-down" onclick="scrollToBottom()"><i class="fa-solid fa-arrow-down"></i></div>
+
     <!-- ===============================================PREMIERE PARTIE====================================== -->
 <div class="section0">
             <!-- ==================================<header>========================================== -->
@@ -186,7 +192,43 @@
       sidemenu.style.right = "-200px";
     }
   </script>
-  <!-- ===============================from web to mail-=============== -->
+  <!-- ===============================fleche de defilement -=============== -->
+  <script>
+    // Afficher ou masquer les flèches en fonction du défilement de la page
+    window.addEventListener('scroll', function () {
+        var scrollToTopBtn = document.querySelector('.scroll-up');
+        var scrollToBottomBtn = document.querySelector('.scroll-down');
+        var windowBottom = window.innerHeight + window.scrollY;
+
+        if (window.scrollY > 200) {
+            scrollToTopBtn.style.display = 'block';
+        } else {
+            scrollToTopBtn.style.display = 'none';
+        }
+
+        if (windowBottom < document.body.offsetHeight - 200) {
+            scrollToBottomBtn.style.display = 'block';
+        } else {
+            scrollToBottomBtn.style.display = 'none';
+        }
+    });
+
+    // Fonction pour revenir en haut de la page
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    // Fonction pour aller en bas de la page
+    function scrollToBottom() {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth'
+        });
+    }
+</script>
 
 </body>
 

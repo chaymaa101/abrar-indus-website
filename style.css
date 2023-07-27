@@ -12,13 +12,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
-  
+  padding: 10px;  
 }
 /* la video en background */
 #bg-video {
   /* filter: brightness(0.5); */
-  position: fixed;
+  /* position: fixed; */
   position: absolute;
   top: -8%;
   left: 0;
@@ -27,6 +26,31 @@
   object-fit: cover;
   z-index: -1;
   margin-bottom: 10px;
+}
+/* ------------------------------------ */
+.scroll-arrow {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 9999; 
+}
+
+.scroll-up {
+  transform: translateY(-100%);
+}
+
+.scroll-down {
+  transform: translateY(0%);
 }
 /* ==========================Logo========================= */
 .logo {
@@ -87,7 +111,6 @@ nav{
 .home-text .Description{
   margin-bottom: 20%;
 }
-
 .home-text h1 {
   font-size: 90px; 
   color: #ffffff;
@@ -95,12 +118,10 @@ nav{
   margin-bottom: 22%;
   font-size: 45px;
   margin-top: 10%;
-  
 }
 .home-text h1 {
   animation: pulsate 15s ease-in-out infinite;
 }
-
 @keyframes pulsate {
   0% {
     transform: scale(1);
@@ -112,8 +133,6 @@ nav{
     transform: scale(1);
   }
 }
-
-
 /* ==============================================presentation========================================= */
 .section1{
   background: white;
@@ -197,7 +216,6 @@ nav{
   background:#DEA50D;
   transform: translateY(-10px);
 }
-
 /* =======================================NOS SERVICES=========================================================== */
 #services {
   padding: 50px 0;
@@ -321,7 +339,7 @@ nav{
 /* <!-- =================================================AVEZ-VOUS DES QUESTIONS?============================================= --> */
 #contact{
   background-color: white;
-  padding: 50px 0; 
+  padding: 20px 0; 
 }
 #contact .row {
   display: flex;
@@ -372,6 +390,7 @@ form .btn2{
   width: 100%;
   height: auto;
   overflow: hidden;
+  margin-top: -3%;
 }
 #info-contact h1 {
   font-size: 40px;
@@ -427,6 +446,7 @@ form .btn2{
   font-weight: 300;
   background-color: gray;
 }
+
 /* =============================================SMALL SCREEN====================================== */
 /* Styles for small screens */
 /* =========================menuicon-=============================== */
