@@ -17,10 +17,10 @@
                     <div class="container">
                         <img src="images/ABRAR INDUSLOGO.png" class="logo">
                         <nav>
-                        <i class="fa-solid fa-bars " style="color: white; position: absolute; top: 10px; right: 10px"  onclick="openmenu()"></i>
+                        <i class="fa-solid fa-bars " style="color: white; position: absolute; top: 10px; right: 10px"  onclick="toggleMenu()"></i>
     
                             <ul class="menu"  id="sidemenu" >
-                                <i class="fa-solid fa-xmark "  style="color: white;position: absolute ; right: -2px;"  onclick="closemenu()"></i>
+                                <i class="fa-solid fa-xmark "  style="color: white;position: absolute ; right: -2px;"  onclick="toggleMenu()"></i>
                                 <li><a href="#home">Accueil</a></li>
                                 <li><a href="#propos">À propos</a> </li>
                                 <li><a href="#services"> Services </a> </li>
@@ -58,7 +58,7 @@
     <div class="row">
         <p> Une entreprise de premier plan engagée dans la construction, la production, et l'exploitation des ressources nécessaires à l'essor de l'industrie. Avec nos filiales Bitumed, Moja Préfa et Sud Gravette, nous couvrons divers aspects de l'industrie, allant des travaux de construction aux produits préfabriqués et à l'exploitation de carrières.
         </p>
-        <img src="images/GENERAL.jpg" alt="abrar-insutrie">
+        <img src="images/general1.jpeg" alt="abrar-insutrie">
     </div>
 </div>
     <!-- ---------------------------========================================-POURQUOI NOUS CHOISIR?============================================-------------------- -->
@@ -172,12 +172,21 @@
 <!-- ================================== -->
 <script>
     var sidemenu = document.getElementById("sidemenu");
-    function openmenu() {
-      sidemenu.style.right = "0";
+  
+    function toggleMenu() {
+      if (sidemenu.style.display === "none") {
+        sidemenu.style.display = "block";
+      } else {
+        sidemenu.style.display = "none";
+      }
     }
-    function closemenu() {
-      sidemenu.style.right = "-200px";
-    }
+  
+    // Fermer le menu lorsqu'on clique en dehors du menu
+    window.addEventListener("click", function (event) {
+      if (!event.target.matches(".fa-bars") && !event.target.matches("#sidemenu") && !event.target.closest("#sidemenu")) {
+        toggleMenu();
+      }
+    });
   </script>
   <!-- ===============================fleche de defilement -=============== -->
   <script>

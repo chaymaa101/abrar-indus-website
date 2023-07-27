@@ -3,6 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
   outline-style: none;
+  font-family:Arial, Helvetica, sans-serif;
 }
 /* Styles pour le header */
 #header {
@@ -79,7 +80,6 @@ nav{
   color: #ffffff;
   text-decoration: none;
   font-size: 20px;
-
 }
 /* ============================================================================================================================= */
 /*================================================= Home=============================================*/
@@ -127,35 +127,32 @@ nav{
   background: white;
   width: 100%;
   height: auto;
-  margin-bottom: 1.5%;
+  /* margin-bottom: 1.5%; */
 }
 .section1 h1{
-  margin-top: 5%;
   text-align: center;
   color: #DEA50D;
   font-size: 50px;
-  margin: auto; 
 }
 .row{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
-.row p {
-  flex-basis: 45%;
-  font-size: 25px;
-    margin-bottom: 20px;
-    margin-top: 15px;
+    justify-content: space-around;
+    align-items: center;
     margin: 30px;
 }
+.row p {
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    flex-basis: 45%;
+    
+}
 .row img {
-  flex-basis: 40%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  height:100%;
-  width:1px; 
-  border-radius: 10px;
+  width: 30%;
+  height: auto;
+  padding: 10px;
+  flex-basis: 35%;
+  border-radius: 30px;
 }
 /* -------------------------------------POURQUOI NOUS CHOISIR------------------------------------------------*/
 #raison {
@@ -337,7 +334,6 @@ nav{
   flex-basis: 60%;
   text-align: center;
 }
-
 .contact-right{
   flex-basis: 40%;
 }
@@ -445,16 +441,13 @@ nav .fa-solid{
     display: none;
   }
   .section0{
-    background-image: url(images/pelle-lourde-pour-creuser-lumiere-du-jour2.jpg); 
-     /* filter: brightness(0.3); */
+    background-image: url(images/small_home.png); 
     content: "";
-    position: absolute;
     top: 0px;
     left:0px;
     background-size:cover;
     background-position: center;
     position: relative;
-    /* margin-bottom:5%; */
   }
     /* =======================================MENU========================== */
     nav .fa-solid{
@@ -463,7 +456,6 @@ nav .fa-solid{
       cursor: pointer;
    }
   nav{
-    /* display: flex; */
     align-items: flex-start;
     flex-wrap:wrap-reverse;
   }
@@ -499,18 +491,17 @@ nav .fa-solid{
     justify-content: center; 
   } */
   .home-text h1 {
-    font-size: 15px; 
-    color: #000000;
-    padding: 20%;
+    font-size: 18px; 
+    color: #0d0138;
+    padding-top: 0%;
+    padding-bottom: 50%;
   }
-
   /* ==============================logo====================== */
   .logo {
     width: 30%; 
     height: auto;
     margin-bottom: 10%; 
   }
-
 /* ===================================presentation======================== */
 .section1 {
   background: white;
@@ -519,28 +510,19 @@ nav .fa-solid{
   padding: 20px;
 }
 .section1 h1 {
-  /* margin-top: 5%; */
   font-size: 30px;
-  margin: auto;
-  margin-top: -20%;
-
+  margin-top: -35%;
 }
 .row {
   display: flex;
-  justify-content: center;
-  /* flex-wrap: wrap; */
+  flex-direction: column;
 }
 .row p {
-  flex-basis: 100%;
-  font-size: 22px;
-  margin-top: -4%;
+  font-size: 18px;
 }
 .row img {
-  width: 100%;
-  height: auto;
-  flex-basis: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  width: 300px;
+  border-radius: 20px;
 }
 /* -------------------------------------POURQUOI NOUS CHOISIR------------------------------------------------*/
 .sub-title {
