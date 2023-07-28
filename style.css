@@ -308,7 +308,7 @@ nav{
   align-items: center; 
 }
 .project-content h1 {
-  color: #000000;
+  color: #fff;
   text-align: center;
   margin-bottom: 2.5%;
   margin-top: 0.5%;
@@ -553,7 +553,7 @@ nav .fa-solid{
   color: #fff;
 }
 .project-content p{
-  color: #000000;
+  color: #fff;
   font-size: 18px;
 }
 /* ======================cotact us============= */
