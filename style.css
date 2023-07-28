@@ -495,7 +495,8 @@ nav .fa-solid{
   } */
   .home-text h1 {
     font-size: 18px; 
-    color: #251aee;
+    color:rgb(255, 168, 7);
+    font-weight: bold;
     padding-top: 0%;
     padding-bottom: 50%;
   }
