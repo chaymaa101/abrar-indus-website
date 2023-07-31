@@ -333,6 +333,7 @@ nav{
 .contact-left{
   flex-basis: 60%;
   text-align: center;
+  margin-top: -7%;
 }
 .contact-right{
   flex-basis: 40%;
